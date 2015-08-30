@@ -1,0 +1,25 @@
+[DATABASE]
+# Database connection if not specified in neutron.conf
+# SAQ:
+connection = mysql://nuage_neutron:redhat123@controller1.hkexpoc.com/nuage_neutron?charset=utf8
+[KEYSTONE]
+# Keystone authentication if not specified in neutron.conf
+keystone_service_endpoint = http://controller1.hkexpoc.com:35357/v2.0/
+#keystone_admin_token = redhat123
+keystone_admin_token = 2eaf44403b444e20a7a9f179f04e650b
+[RESTPROXY]
+# Desired Name of VSD Organization/Enterprise to use when net-partition
+# is not specified
+# SAQ:
+default_net_partition_name = 'HKEX POC RH'
+# Hostname or IP address and port for connection to VSD server
+server = vsd.hkexpoc.com:8443
+# VSD Username and password for OpenStack plugin connection
+# User must belong to CSP Root group and CSP CMS group
+# SAQ:
+serverauth = OSadmin:redhat
+### Do not change the below options for standard installs
+organization = csp
+auth_resource = /me
+serverssl = True
+base_uri = /nuage/api/v3_2
