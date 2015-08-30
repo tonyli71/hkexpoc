@@ -1,0 +1,46 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:99:03:19 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.252.36/24 brd 192.168.252.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fe99:319/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:05:22:d6 brd ff:ff:ff:ff:ff:ff
+    inet 10.193.25.36/24 brd 10.193.25.255 scope global eth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fe05:22d6/64 scope link 
+       valid_lft forever preferred_lft forever
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:98:57:fc brd ff:ff:ff:ff:ff:ff
+    inet 10.193.56.36/24 brd 10.193.56.255 scope global eth2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fe98:57fc/64 scope link 
+       valid_lft forever preferred_lft forever
+5: eth3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:c5:ac:e6 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::5054:ff:fec5:ace6/64 scope link 
+       valid_lft forever preferred_lft forever
+6: eth4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:be:3b:9a brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::5054:ff:febe:3b9a/64 scope link 
+       valid_lft forever preferred_lft forever
+7: eth5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP qlen 1000
+    link/ether 52:54:00:86:5d:23 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.130.17/22 brd 192.168.131.255 scope global dynamic eth5
+       valid_lft 24671sec preferred_lft 24671sec
+    inet6 fe80::5054:ff:fe86:5d23/64 scope link 
+       valid_lft forever preferred_lft forever
+8: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN 
+    link/ether ea:60:da:21:3e:22 brd ff:ff:ff:ff:ff:ff
+9: br-ex: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN 
+    link/ether 86:56:e2:62:87:49 brd ff:ff:ff:ff:ff:ff
+10: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN 
+    link/ether 9a:a4:9b:de:31:42 brd ff:ff:ff:ff:ff:ff
+11: br-tun: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN 
+    link/ether 92:06:65:53:0f:4f brd ff:ff:ff:ff:ff:ff
