@@ -1,0 +1,166 @@
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy --overwrite-conf config push admin-ceph
+[ceph_deploy.config][DEBUG ] Pushing config to admin-ceph
+[admin-ceph][DEBUG ] connected to host: admin-ceph 
+[admin-ceph][DEBUG ] detect platform information from remote host
+[admin-ceph][DEBUG ] detect machine type
+[admin-ceph][DEBUG ] write cluster configuration to /etc/ceph/{cluster}.conf
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy install root@192.168.251.31
+[ceph_deploy.install][DEBUG ] Installing stable version hammer on cluster ceph hosts root@192.168.251.31
+[ceph_deploy.install][DEBUG ] Detecting platform for host root@192.168.251.31 ...
+[root@192.168.251.31][DEBUG ] connected to host: root@192.168.251.31 
+[root@192.168.251.31][DEBUG ] detect platform information from remote host
+[root@192.168.251.31][DEBUG ] detect machine type
+[ceph_deploy.install][INFO  ] Distro info: Red Hat Enterprise Linux Server 7.1 Maipo
+[root@192.168.251.31][INFO  ] installing ceph on root@192.168.251.31
+[root@192.168.251.31][INFO  ] Running command: yum clean all
+[root@192.168.251.31][DEBUG ] Cleaning repos: epel
+[root@192.168.251.31][DEBUG ] Cleaning up everything
+[root@192.168.251.31][INFO  ] Running command: yum -y install ceph-osd ceph-mds ceph-mon ceph-radosgw
+[root@192.168.251.31][DEBUG ] No package ceph-osd available.
+[root@192.168.251.31][DEBUG ] No package ceph-mds available.
+[root@192.168.251.31][DEBUG ] No package ceph-mon available.
+[root@192.168.251.31][DEBUG ] Resolving Dependencies
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph-radosgw.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph-common = 1:0.80.7 for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: libfcgi.so.0()(64bit) for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: python-rbd = 1:0.80.7 for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: python-rados = 1:0.80.7 for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: python-cephfs = 1:0.80.7 for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package fcgi.x86_64 0:2.4.0-25.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package python-cephfs.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: libcephfs1 = 1:0.80.7 for package: 1:python-cephfs-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package python-rados.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] ---> Package python-rbd.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-common-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package libcephfs1.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Finished Dependency Resolution
+[root@192.168.251.31][DEBUG ]  You could try using --skip-broken to work around the problem
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-common-0.80.7-0.4.el7.x86_64 (epel)
+[root@192.168.251.31][WARNING]            Requires: redhat-lsb-core
+[root@192.168.251.31][DEBUG ]  You could try running: rpm -Va --nofiles --nodigest
+[root@192.168.251.31][ERROR ] RuntimeError: command returned non-zero exit status: 1
+[ceph_deploy][ERROR ] RuntimeError: Failed to execute command: yum -y install ceph-osd ceph-mds ceph-mon ceph-radosgw
+
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy admin root@192.168.251.31
+[ceph_deploy.admin][DEBUG ] Pushing admin keys and conf to root@192.168.251.31
+[root@192.168.251.31][DEBUG ] connected to host: root@192.168.251.31 
+[root@192.168.251.31][DEBUG ] detect platform information from remote host
+[root@192.168.251.31][DEBUG ] detect machine type
+[root@192.168.251.31][DEBUG ] write cluster configuration to /etc/ceph/{cluster}.conf
+[ceph_deploy.admin][ERROR ] RuntimeError: config file /etc/ceph/ceph.conf exists with different content; use --overwrite-conf to overwrite
+[ceph_deploy][ERROR ] GenericError: Failed to configure 1 admin hosts
+
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy --overwrite-conf admin root@192.168.251.31
+[ceph_deploy.admin][DEBUG ] Pushing admin keys and conf to root@192.168.251.31
+[root@192.168.251.31][DEBUG ] connected to host: root@192.168.251.31 
+[root@192.168.251.31][DEBUG ] detect platform information from remote host
+[root@192.168.251.31][DEBUG ] detect machine type
+[root@192.168.251.31][DEBUG ] write cluster configuration to /etc/ceph/{cluster}.conf
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy install root@192.168.251.31
+[ceph_deploy.install][DEBUG ] Installing stable version hammer on cluster ceph hosts root@192.168.251.31
+[ceph_deploy.install][DEBUG ] Detecting platform for host root@192.168.251.31 ...
+[root@192.168.251.31][DEBUG ] connected to host: root@192.168.251.31 
+[root@192.168.251.31][DEBUG ] detect platform information from remote host
+[root@192.168.251.31][DEBUG ] detect machine type
+[ceph_deploy.install][INFO  ] Distro info: Red Hat Enterprise Linux Server 7.1 Maipo
+[root@192.168.251.31][INFO  ] installing ceph on root@192.168.251.31
+[root@192.168.251.31][INFO  ] Running command: yum clean all
+[root@192.168.251.31][DEBUG ] Cleaning repos: Ceph-Installer Ceph-MON Ceph-OSD calamari epel
+[root@192.168.251.31][DEBUG ] Cleaning up everything
+[root@192.168.251.31][INFO  ] Running command: yum -y install ceph-osd ceph-mds ceph-mon ceph-radosgw
+[root@192.168.251.31][DEBUG ] No package ceph-mds available.
+[root@192.168.251.31][DEBUG ] Resolving Dependencies
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph-mon.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph = 1:0.94.1-13.el7cp for package: 1:ceph-mon-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: libleveldb.so.1()(64bit) for package: 1:ceph-mon-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package ceph-osd.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] ---> Package ceph-radosgw.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph-common = 1:0.80.7 for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: libfcgi.so.0()(64bit) for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph-common = 1:0.94.1 for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: librados2 = 1:0.94.1 for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: librbd1 = 1:0.94.1 for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: python-rados = 1:0.94.1 for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: python-rbd = 1:0.94.1 for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: hdparm for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph-common = 1:0.80.7 for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package fcgi.x86_64 0:2.4.0-25.el7 will be installed
+[root@192.168.251.31][DEBUG ] ---> Package leveldb.x86_64 0:1.12.0-5.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Running transaction check
+[root@192.168.251.31][DEBUG ] ---> Package ceph.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: hdparm for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.80.7-0.4.el7 will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: ceph-common = 1:0.80.7 for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package ceph-common.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: redhat-lsb-core for package: 1:ceph-common-0.94.1-13.el7cp.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package librados2.x86_64 1:0.80.7-2.el7 will be updated
+[root@192.168.251.31][DEBUG ] --> Processing Dependency: librados2 = 1:0.80.7 for package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64
+[root@192.168.251.31][DEBUG ] ---> Package librados2.x86_64 1:0.94.1-13.el7cp will be an update
+[root@192.168.251.31][DEBUG ] ---> Package librbd1.x86_64 1:0.80.7-2.el7 will be updated
+[root@192.168.251.31][DEBUG ] ---> Package librbd1.x86_64 1:0.94.1-13.el7cp will be an update
+[root@192.168.251.31][DEBUG ] ---> Package python-rados.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] ---> Package python-rbd.x86_64 1:0.94.1-13.el7cp will be installed
+[root@192.168.251.31][DEBUG ] --> Finished Dependency Resolution
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-0.94.1-13.el7cp.x86_64 (Ceph-MON)
+[root@192.168.251.31][WARNING]            Requires: redhat-lsb-core
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-0.94.1-13.el7cp.x86_64 (Ceph-MON)
+[root@192.168.251.31][WARNING]            Requires: hdparm
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64 (epel)
+[root@192.168.251.31][WARNING]            Requires: ceph-common = 1:0.80.7
+[root@192.168.251.31][WARNING]            Available: 1:ceph-common-0.80.7-0.4.el7.x86_64 (epel)
+[root@192.168.251.31][DEBUG ]  You could try using --skip-broken to work around the problem
+[root@192.168.251.31][WARNING]                ceph-common = 1:0.80.7-0.4.el7
+[root@192.168.251.31][WARNING]            Installing: 1:ceph-common-0.94.1-13.el7cp.x86_64 (Ceph-MON)
+[root@192.168.251.31][WARNING]                ceph-common = 1:0.94.1-13.el7cp
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-common-0.94.1-13.el7cp.x86_64 (Ceph-MON)
+[root@192.168.251.31][WARNING]            Requires: redhat-lsb-core
+[root@192.168.251.31][WARNING] Error: Package: 1:ceph-radosgw-0.80.7-0.4.el7.x86_64 (epel)
+[root@192.168.251.31][WARNING]            Requires: librados2 = 1:0.80.7
+[root@192.168.251.31][WARNING]            Removing: 1:librados2-0.80.7-2.el7.x86_64 (@lrhel-7-server-rpms)
+[root@192.168.251.31][WARNING]                librados2 = 1:0.80.7-2.el7
+[root@192.168.251.31][WARNING]            Updated By: 1:librados2-0.94.1-13.el7cp.x86_64 (Ceph-MON)
+[root@192.168.251.31][WARNING]                librados2 = 1:0.94.1-13.el7cp
+[root@192.168.251.31][WARNING]            Available: 1:librados2-0.80.7-0.4.el7.x86_64 (epel)
+[root@192.168.251.31][WARNING]                librados2 = 1:0.80.7-0.4.el7
+[root@192.168.251.31][DEBUG ]  You could try running: rpm -Va --nofiles --nodigest
+[root@192.168.251.31][ERROR ] RuntimeError: command returned non-zero exit status: 1
+[ceph_deploy][ERROR ] RuntimeError: Failed to execute command: yum -y install ceph-osd ceph-mds ceph-mon ceph-radosgw
+
+[ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[ceph_deploy.cli][INFO  ] Invoked (1.5.25): /usr/bin/ceph-deploy calamari connect --master admin-ceph.hkexpoc.com ceph1
+[ceph1][DEBUG ] connection detected need for sudo
+[ceph1][DEBUG ] connected to host: ceph1 
+[ceph1][DEBUG ] detect platform information from remote host
+[ceph1][DEBUG ] detect machine type
+[ceph_deploy.calamari][INFO  ] Distro info: Red Hat Enterprise Linux Server 7.1 Maipo
+[ceph_deploy.calamari][INFO  ] assuming that a repository with Calamari packages is already configured.
+[ceph_deploy.calamari][INFO  ] Refer to the docs for examples (http://ceph.com/ceph-deploy/docs/conf.html)
+[ceph1][DEBUG ] creating config dir: /etc/salt/minion.d
+[ceph1][DEBUG ] creating the calamari salt config: /etc/salt/minion.d/calamari.conf
+[ceph1][INFO  ] Running command: sudo yum -y install salt-minion
+[ceph1][DEBUG ] Package salt-minion-2014.1.5-3.el7cp.noarch already installed and latest version
+[ceph1][DEBUG ] Nothing to do
+[ceph1][INFO  ] Running command: sudo chkconfig salt-minion on
+[ceph1][WARNING] Note: Forwarding request to 'systemctl enable salt-minion.service'.
+[ceph1][INFO  ] Running command: sudo service salt-minion start
+[ceph1][WARNING] Redirecting to /bin/systemctl start  salt-minion.service
