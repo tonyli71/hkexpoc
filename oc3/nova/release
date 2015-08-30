@@ -1,0 +1,4 @@
+[Nova]
+vendor = Red Hat
+product = OpenStack Compute
+package = 16.el7ost
