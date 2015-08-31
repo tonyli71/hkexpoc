@@ -1,0 +1,5 @@
+HWADDR=52:54:00:c5:ac:e6
+NM_CONTROLLED=no
+DEVICE="eth3"
+BOOTPROTO="none"
+ONBOOT="yes"
