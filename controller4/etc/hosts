@@ -1,9 +1,9 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.251.31 controller1.hkexpoc.com controller1 osp-vip.hkexpoc.com
+192.168.251.31 controller1.hkexpoc.com controller1
 192.168.251.34 controller2.hkexpoc.com controller2
 192.168.252.35 controller3.hkexpoc.com controller3
-192.168.252.36 controller4.hkexpoc.com controller4
+192.168.252.36 controller4.hkexpoc.com controller4 osp-vip.hkexpoc.com
 192.168.251.33 osp-vip1.hkexpoc.com osp-vip1
 192.168.252.33 osp-vip2.hkexpoc.com osp-vip2
 192.168.251.211 oc1.hkexpoc.com oc1
